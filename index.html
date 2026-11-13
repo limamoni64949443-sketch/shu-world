@@ -631,6 +631,12 @@
  .funnel .guidedRoute li,.funnel .guidedRoute li:last-child {min-height:56px;padding-block:5px}
  .funnel .routeColumns {margin-block:5px 4px}
 }
+@media (min-width:1100px) and (min-height:630px) and (orientation:landscape) {
+ .tourRail {--section-space:clamp(0px,min(calc(25dvh - 150px),calc(11vw - 112px)),36px)}
+ .tourIntro .shoppingPaths {margin-top:calc(9px + var(--section-space))}
+ .tourIntro h2.conceptHeading {margin-top:calc(18px + var(--section-space))}
+ .tourSteps .metricFunnel {margin-bottom:calc(12px + var(--section-space))}
+}
 </style></head><body>
 <aside class="tourRail tourIntro" aria-labelledby="conceptHeading">
         <header class="railHeader"><img class="railMascot" src="data:image/png;base64,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" alt="" width="60" height="70"><div class="railTitle"><h1 id="conceptHeading">薯世界</h1><p class="railContext">小红书市集</p></div></header>
@@ -674,10 +680,10 @@
         <ol class="tourList guidedRoute"><li data-phase="idle" data-visited="false" data-next="false" data-cue="翻到毕业白裙，看看下单前的三晚浏览和那次好友分享。">
           <div class="painCell">
             <div class="routeMeta"><span class="stationMark">01</span><span>流量</span></div>
-            <p class="funnelPain"><span>种草后去站外</span><span>想不起逛市集</span></p>
+            <p class="funnelPain"><span>找同款常跨站</span><span>找旧店要翻单</span></p>
           </div>
           <div class="stationCopy">
-            <h3 id="tour-shop">翻购买足迹</h3><p class="routeAction">从白裙订单和分享记录，回到毕业那晚。</p>
+            <h3 id="tour-shop">翻购买足迹</h3><p class="routeAction">翻白裙订单和分享记录，找回毕业前逛过的店。</p>
           </div>
           <button type="button" data-tour="shop" aria-controls="map">
             <span class="routeVerb">去体验</span><i aria-hidden="true"></i>
@@ -685,10 +691,10 @@
         </li><li data-phase="idle" data-visited="false" data-next="false" data-cue="滑完五张卡，看点点怎样根据这轮选择解释推荐。">
           <div class="painCell">
             <div class="routeMeta"><span class="stationMark">02</span><span>匹配</span></div>
-            <p class="funnelPain"><span>推荐总是重复</span><span>喜好难表达</span></p>
+            <p class="funnelPain"><span>同类反复推荐</span><span>喜好难以表达</span></p>
           </div>
           <div class="stationCopy">
-            <h3 id="tour-heart">去心动放映厅选款</h3><p class="routeAction">左右滑反馈喜好，让算法推荐更准。</p>
+            <h3 id="tour-heart">去心动放映厅选款</h3><p class="routeAction">用左右滑向算法反馈喜好，让推荐更合口味。</p>
           </div>
           <button type="button" data-tour="heart" aria-controls="map">
             <span class="routeVerb">去体验</span><i aria-hidden="true"></i>
@@ -699,7 +705,7 @@
             <p class="funnelPain"><span>小店难获新客</span><span>买家难找实测</span></p>
           </div>
           <div class="stationCopy">
-            <h3 id="tour-trial">免费试用新品</h3><p class="routeAction">写真实笔记，给下一位买家参考。</p>
+            <h3 id="tour-trial">免费试用新品</h3><p class="routeAction">把试用感受写成笔记，帮下一位买家挑选。</p>
           </div>
           <button type="button" data-tour="trial" aria-controls="map">
             <span class="routeVerb">去体验</span><i aria-hidden="true"></i>
@@ -707,10 +713,10 @@
         </li><li data-phase="idle" data-visited="false" data-next="false" data-cue="点券面按钮找适用商品，再到结算页核对到手价。">
           <div class="painCell">
             <div class="routeMeta"><span class="stationMark">04</span><span>成交</span></div>
-            <p class="funnelPain"><span>对价格敏感</span><span>可用券难找</span></p>
+            <p class="funnelPain"><span>可用券难找</span><span>到手价难算</span></p>
           </div>
           <div class="stationCopy">
-            <h3 id="tour-gift">拆礼盒领券</h3><p class="routeAction">挑适用商品，下单前看清到手价。</p>
+            <h3 id="tour-gift">拆礼盒领券</h3><p class="routeAction">领券后挑适用商品，结算前看清到手价。</p>
           </div>
           <button type="button" data-tour="gift" aria-controls="map">
             <span class="routeVerb">去体验</span><i aria-hidden="true"></i>
@@ -1326,7 +1332,7 @@
  &lt;p id=&quot;npcSaid&quot; aria-live=&quot;polite&quot;&gt;&lt;/p&gt;&lt;div id=&quot;npcReplies&quot;&gt;&lt;/div&gt;
 &lt;/section&gt;&lt;div id=&quot;arrivalCard&quot; hidden&gt;
  &lt;button type=&quot;button&quot; id=&quot;tourAction&quot; hidden aria-labelledby=&quot;arrivalTitle&quot;&gt;&lt;strong id=&quot;arrivalTitle&quot; aria-live=&quot;polite&quot;&gt;&lt;/strong&gt;&lt;/button&gt;
- &lt;progress id=&quot;arrivalProgress&quot; max=&quot;2000&quot; value=&quot;0&quot; aria-label=&quot;自动进入倒计时&quot;&gt;&lt;/progress&gt;
+ &lt;progress id=&quot;arrivalProgress&quot; max=&quot;1500&quot; value=&quot;0&quot; aria-label=&quot;自动进入倒计时&quot;&gt;&lt;/progress&gt;
  &lt;button type=&quot;button&quot; id=&quot;arrivalCancel&quot; aria-label=&quot;取消自动进入，留在街区&quot; title=&quot;留在街区&quot;&gt;×&lt;/button&gt;
 &lt;/div&gt;&lt;div class=&quot;guide&quot;&gt;&lt;span id=&quot;hint&quot; role=&quot;status&quot;&gt;单指行走 · 双指缩放和移图&lt;/span&gt;&lt;span id=&quot;guide&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;/section&gt;&lt;div id=&quot;modal&quot; class=&quot;overlay&quot; hidden&gt;&lt;section id=&quot;panel&quot; class=&quot;panel&quot; role=&quot;dialog&quot; aria-modal=&quot;true&quot; aria-label=&quot;玩法面板&quot;&gt;&lt;/section&gt;&lt;/div&gt;&lt;/main&gt;
 
@@ -1342,7 +1348,14 @@ const cards=[[&#x27;hat&#x27;,&#x27;法式草编帽&#x27;],[&#x27;camera&#x27;,&
 
 const clothes=[[&#x27;fashion/work-dress.jpg&#x27;,&#x27;炭灰翻领通勤西装裙&#x27;,159],[&#x27;trench&#x27;,&#x27;焦糖风衣&#x27;,199],[&#x27;cardigan&#x27;,&#x27;珊瑚色开衫&#x27;,99],[&#x27;skirt&#x27;,&#x27;鼠尾草百褶裙&#x27;,89]];
 
-let state={votes:[],coupon:&#x27;&#x27;,task:&#x27;&#x27;,orders:[]};try{Object.assign(state,JSON.parse(localStorage.lifeMallDemo||&#x27;{}&#x27;))}catch{}function persist(){try{localStorage.lifeMallDemo=JSON.stringify(state)}catch{}}
+function initialVisit() {
+ return {votes:[], coupon:&#x27;&#x27;, task:&#x27;&#x27;, orders:[]};
+}
+let state=initialVisit();
+function beginFeatureVisit() {
+ state=initialVisit();
+ parent.resetDemoProducts?.();
+}
 
 let current=null,opened=&#x27;&#x27;,goal=[],onArrival=null,pos=NAV.nodes[&#x27;0-1&#x27;].slice(),direction=0,cam=0,zoom=1,walked=0,boxAt=null,frameTime=0;
 
@@ -1518,6 +1531,7 @@ const walls=[[166, 173, 144, 142], [430, 48, 155, 153], [807, 2, 195, 193], [993
 
 const shoreline=[[945, 540], [944, 553], [937, 565], [925, 576], [910, 586], [894, 594], [878, 602], [864, 609], [851, 616], [837, 623], [823, 630], [807, 636], [789, 640], [771, 641], [753, 642], [734, 641], [716, 640], [698, 639], [679, 638], [658, 637], [637, 635], [616, 630], [598, 623], [584, 613], [576, 601], [573, 587], [576, 574], [581, 561], [586, 550], [591, 540], [592, 530], [591, 519], [589, 508], [588, 496], [590, 484], [597, 472], [607, 462], [622, 453], [639, 446], [657, 441], [676, 437], [695, 433], [714, 430], [733, 428], [754, 427], [774, 429], [793, 433], [810, 439], [824, 448], [835, 458], [845, 467], [855, 476], [866, 483], [879, 490], [894, 497], [911, 505], [927, 515], [938, 527]];
 function inLake(x,y){if(x&gt;=585&amp;&amp;x&lt;=655&amp;&amp;y&gt;=433&amp;&amp;y&lt;=473)return false;let inside=false;for(let i=0,j=shoreline.length-1;i&lt;shoreline.length;j=i++){let [ax,ay]=shoreline[i],[bx,by]=shoreline[j];if((ay&gt;y)!==(by&gt;y)&amp;&amp;x&lt;(bx-ax)*(y-ay)/(by-ay)+ax)inside=!inside}return inside}
+const walkSpeedMultiplier=2;
 function manual(dt){
 
  let x=Number(keys.has(&#x27;ArrowRight&#x27;))-Number(keys.has(&#x27;ArrowLeft&#x27;))+vector[0],y=Number(keys.has(&#x27;ArrowDown&#x27;))-Number(keys.has(&#x27;ArrowUp&#x27;))+vector[1];
@@ -1573,7 +1587,7 @@ function drawHost(t){
  hostTag.hidden=Boolean(opened || (guidedTour?.key===&#x27;trial&#x27;&amp;&amp;guidedTour.ready) ||
    cx&lt;0 || cx&gt;$(&#x27;world&#x27;).clientWidth || cy&lt;42 || cy&gt;$(&#x27;world&#x27;).clientHeight+30);
  if(hostTag.hidden)return;
- const verb=state.task===&#x27;pending&#x27;?&#x27;继续试用&#x27;:state.task===&#x27;submitted&#x27;?&#x27;看笔记&#x27;:&#x27;对话&#x27;;
+ const verb=&#x27;对话&#x27;;
  if(hostTag.lastElementChild.textContent!==verb)hostTag.lastElementChild.textContent=verb;
  hostTag.style.left=Math.max(65,Math.min($(&#x27;world&#x27;).clientWidth-65,cx))+&#x27;px&#x27;;
  hostTag.style.top=(cy-59*zoom-3)+&#x27;px&#x27;;
@@ -1732,9 +1746,9 @@ function giftImpact(time){
 function fallingGift(t,dt){
  const hit=$(&#x27;gift&#x27;);hit.hidden=!!opened||browseY!==null;
  if(hit.hidden)return;
- const label=state.coupon===&#x27;used&#x27;?&#x27;查看已用券&#x27;:state.coupon===&#x27;ready&#x27;?&#x27;查看优惠券&#x27;:&#x27;点我拆礼物&#x27;;
+ const label=&#x27;点我拆礼物&#x27;;
  if(hit.lastElementChild.textContent!==label)hit.lastElementChild.textContent=label;
- const accessibleName=state.coupon?label:&#x27;打开薯仔头顶的礼盒&#x27;;
+ const accessibleName=&#x27;打开薯仔头顶的礼盒&#x27;;
  if(hit.getAttribute(&#x27;aria-label&#x27;)!==accessibleName)hit.setAttribute(&#x27;aria-label&#x27;,accessibleName);
  const x=pos[0],crown=pos[1]-54;
  const jumping=giftCanBounce(), time=giftClock%giftPeriod;
@@ -1780,7 +1794,7 @@ function fallingGift(t,dt){
  ctx.restore();
 }
 
-function render(t){let dt=Math.min(.05,(t-frameTime)/1000);frameTime=t;if(!$(&#x27;street&#x27;).hidden){const c=$(&#x27;world&#x27;);if(!opened)manual(dt);if(!opened&amp;&amp;(goal.length||walking)){if(goal.length){const next=goal[0],l=dist(pos,next),speed=guidedTour?guidedTour.speed:goal.reduce((z,p,i)=&gt;z+dist(p,i?goal[i-1]:pos),0)&gt;480?560:120,step=Math.min(l,dt*speed);if(l){let dx=next[0]-pos[0],dy=next[1]-pos[1];direction=Math.abs(dx)&gt;Math.abs(dy)?dx&lt;0?1:2:dy&lt;0?3:0;pos=[pos[0]+dx/l*step,pos[1]+dy/l*step];walked+=step}if(l&lt;=step)goal.shift();}
+function render(t){let dt=Math.min(.05,(t-frameTime)/1000);frameTime=t;if(!$(&#x27;street&#x27;).hidden){const c=$(&#x27;world&#x27;);if(!opened)manual(dt*walkSpeedMultiplier);if(!opened&amp;&amp;(goal.length||walking)){if(goal.length){const next=goal[0],l=dist(pos,next),speed=guidedTour?guidedTour.speed:goal.reduce((z,p,i)=&gt;z+dist(p,i?goal[i-1]:pos),0)&gt;480?560:120,step=Math.min(l,dt*speed*walkSpeedMultiplier);if(l){let dx=next[0]-pos[0],dy=next[1]-pos[1];direction=Math.abs(dx)&gt;Math.abs(dy)?dx&lt;0?1:2:dy&lt;0?3:0;pos=[pos[0]+dx/l*step,pos[1]+dy/l*step];walked+=step}if(l&lt;=step)goal.shift();}
 
  
 
@@ -1981,8 +1995,17 @@ function receipts(id){
   rows.push({slot:3+i,trial:!!o.trial,a,photo:ASSET[a.p],store:shop.name,title:a.name,date:o.date||&#x27;购买记录&#x27;,sku:[o.style,o.size].filter(Boolean).join(&#x27; · &#x27;)||&#x27;图示款&#x27;,old:String(a.price),price:String(o.total),number:o.number||(&#x27;M&#x27;+String(i+1).padStart(9,&#x27;0&#x27;)),...purchaseMemory(categoryOf(id),a,o)})
  }return rows
 }
-window.memoryReceipt=(id,i,restore)=&gt;{const rec=receipts(id).find(r=&gt;r.slot===i);if(rec&amp;&amp;restore)visit(NAV.shops.find(s=&gt;s.id===id));return rec};
-function shop(startTab=&#x27;memory&#x27;){endGuidance();parent.setTourStep?.(&#x27;shop&#x27;);
+window.memoryReceipt=(id,i,restore)=&gt;{
+ const inGallery=current?.id===id&amp;&amp;opened&amp;&amp;$(&#x27;panel&#x27;).classList.contains(&#x27;shopPage&#x27;);
+ if(restore&amp;&amp;!inGallery){
+   // Only the original order can open a fresh gallery from a shared URL.
+   const venue=NAV.shops.find(s=&gt;s.id===id);
+   if(!venue||i!==2||!originalOrder(id,2))return;
+   visit(venue);
+ }
+ return receipts(id).find(row=&gt;row.slot===i);
+};
+function shop(startTab=&#x27;memory&#x27;){beginFeatureVisit();endGuidance();parent.setTourStep?.(&#x27;shop&#x27;);
 
  const id=current.id,cat=categoryOf(id),list=shelfItems(cat),records=receipts(id),room=ASSET[memory+cat+&#x27;-room.png&#x27;];
  const interest=exampleInterest(cat);
@@ -2064,7 +2087,7 @@ function buy(a,shopId=current?.id||a.id){
 
  parent.openShelfProduct(a,ASSET[a.p],discount,(style,size)=&gt;{
 
-  if(discount)state.coupon=&#x27;used&#x27;;state.orders.push({shopId,item:a,name:a.name,total:a.price-discount,style,size,date:new Date().toLocaleDateString(&#x27;sv-SE&#x27;),number:&#x27;M&#x27;+Date.now()});persist();parent.refreshMarketOffer?.();close();$(&#x27;hint&#x27;).textContent=&#x27;已带走「&#x27;+a.name+&#x27;」&#x27;
+  if(discount)state.coupon=&#x27;used&#x27;;state.orders.push({shopId,item:a,name:a.name,total:a.price-discount,style,size,date:new Date().toLocaleDateString(&#x27;sv-SE&#x27;),number:&#x27;M&#x27;+Date.now()});parent.refreshMarketOffer?.();close();$(&#x27;hint&#x27;).textContent=&#x27;已带走「&#x27;+a.name+&#x27;」&#x27;
 
  })
 
@@ -2148,13 +2171,14 @@ function filmResults(votes, liked, complete) {
 
 let roundVotes = [];
 function enterFilmHall() {
+  beginFeatureVisit();
   roundVotes = [];
   deck(&#x27;play&#x27;);
 }
 function recordRound(votes) {
   roundVotes = votes;
   state.votes = votes.slice();
-  persist();
+  
 }
 function deck(section) {
   endGuidance(); parent.setTourStep?.(&#x27;heart&#x27;);
@@ -2224,10 +2248,9 @@ function deck(section) {
   };
 }
 
-$(&#x27;gift&#x27;).onclick=()=&gt;{goal=[];onArrival=null;chest()};function chest(){endGuidance();parent.setTourStep?.(&#x27;gift&#x27;);
- if(state.coupon!==&#x27;used&#x27;){state.coupon=&#x27;ready&#x27;;persist()}
- const used=state.coupon===&#x27;used&#x27;;
- show(&#x27;薯仔的零食券&#x27;,(used?&#x27;&#x27;:&#x27;&lt;div class=&quot;giftReveal&quot; aria-hidden=&quot;true&quot;&gt;&lt;div class=&quot;parcelScene&quot;&gt;&lt;i class=&quot;parcelSlip&quot;&gt;&lt;/i&gt;&lt;i class=&quot;parcelBody&quot;&gt;&lt;/i&gt;&lt;i class=&quot;parcelLid&quot;&gt;&lt;/i&gt;&lt;i class=&quot;parcelGlint&quot;&gt;&lt;/i&gt;&lt;i class=&quot;parcelGlint second&quot;&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;&#x27;)+&#x27;&lt;div class=&quot;ticket&#x27;+(used?&#x27; ticketUsed&#x27;:&#x27;&#x27;)+&#x27;&quot;&gt;&lt;span&gt;市集 · 零食专享&lt;/span&gt;&lt;strong&gt;¥15&lt;/strong&gt;&lt;small&gt;果干礼袋满 50 元可用 · &#x27;+(used?&#x27;已使用&#x27;:&#x27;已领取&#x27;)+&#x27;&lt;/small&gt;&lt;/div&gt;&lt;button class=&quot;primary&quot; id=&quot;snack&quot;&gt;&#x27;+(used?&#x27;继续逛市集&#x27;:&#x27;去市集用券&#x27;)+&#x27;&lt;/button&gt;&#x27;);
+$(&#x27;gift&#x27;).onclick=()=&gt;{goal=[];onArrival=null;chest()};function chest(){beginFeatureVisit();endGuidance();parent.setTourStep?.(&#x27;gift&#x27;);
+ state.coupon=&#x27;ready&#x27;;
+ show(&#x27;薯仔的零食券&#x27;,&#x27;&lt;div class=&quot;giftReveal&quot; aria-hidden=&quot;true&quot;&gt;&lt;div class=&quot;parcelScene&quot;&gt;&lt;i class=&quot;parcelSlip&quot;&gt;&lt;/i&gt;&lt;i class=&quot;parcelBody&quot;&gt;&lt;/i&gt;&lt;i class=&quot;parcelLid&quot;&gt;&lt;/i&gt;&lt;i class=&quot;parcelGlint&quot;&gt;&lt;/i&gt;&lt;i class=&quot;parcelGlint second&quot;&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;ticket&quot;&gt;&lt;span&gt;市集 · 零食专享&lt;/span&gt;&lt;strong&gt;¥15&lt;/strong&gt;&lt;small&gt;果干礼袋满 50 元可用 · 已领取&lt;/small&gt;&lt;/div&gt;&lt;button class=&quot;primary&quot; id=&quot;snack&quot;&gt;去市集用券&lt;/button&gt;&#x27;);
  const panel=$(&#x27;panel&#x27;);panel.classList.add(&#x27;couponCenter&#x27;);
  const closeButton=panel.querySelector(&#x27;.close&#x27;);closeButton.textContent=&#x27;×&#x27;;closeButton.setAttribute(&#x27;aria-label&#x27;,&#x27;收起优惠券&#x27;);
  $(&#x27;snack&#x27;).onclick=()=&gt;{close();parent.showMarketFeed()}
@@ -2307,7 +2330,7 @@ function drawGuidePath(){
  ctx.fillStyle=&#x27;#fff3d7&#x27;;ctx.fill();ctx.strokeStyle=&#x27;#a45d40&#x27;;ctx.lineWidth=1.7*px;ctx.stroke();
  ctx.restore();
 }
-const arrivalDelay=2000;
+const arrivalDelay=$(&#x27;arrivalProgress&#x27;).max;
 const arrivalLabels={shop:&#x27;品质女装&#x27;,gift:&#x27;湖畔礼盒&#x27;,heart:&#x27;心动放映厅&#x27;,trial:&#x27;新品体验官&#x27;};
 function presentArrival(){
  const tour=guidedTour;
@@ -2345,7 +2368,11 @@ window.addEventListener(&#x27;keydown&#x27;,e=&gt;{if(e.key===&#x27;Escape&#x27;
 document.addEventListener(&#x27;visibilitychange&#x27;,()=&gt;{if(document.hidden&amp;&amp;guidedTour)endGuidance()});
 const trialItem={id:&#x27;paper&#x27;,p:&#x27;trial/notebook.jpg&#x27;,name:&#x27;黄铜扣手账本&#x27;,price:39,trial:true};
 
-function recruit(){endGuidance();
+function recruit(){
+ beginFeatureVisit();
+ trialDetail();
+}
+function trialDetail(){endGuidance();
  parent.setTourStep?.(&#x27;trial&#x27;);
  const pending=state.task===&#x27;pending&#x27;, completed=state.task===&#x27;submitted&#x27;;
  const stage=completed?3:pending?2:0;
@@ -2407,7 +2434,7 @@ function trialProduct(caption) {
 }
 
 function confirmTrial() {
-  if (state.task) { recruit(); return; }
+  if (state.task) { trialDetail(); return; }
   trialPage(&#x27;确认领取试用资格&#x27;,
     &#x27;&lt;section&gt;&lt;h3&gt;街角文具店&lt;/h3&gt;&#x27;+trialProduct(&#x27;零元试用 · 黄铜扣手账本 1 本&#x27;)+&#x27;&lt;/section&gt;&#x27;+
     &#x27;&lt;section&gt;&lt;h3&gt;订单明细&lt;/h3&gt;&lt;div class=&quot;moneyRow&quot;&gt;&lt;span&gt;商品金额&lt;/span&gt;&lt;span&gt;¥&#x27;+trialItem.price+&#x27;.00&lt;/span&gt;&lt;/div&gt;&#x27;+
@@ -2415,13 +2442,11 @@ function confirmTrial() {
     &#x27;&lt;div class=&quot;moneyRow trialPaid&quot;&gt;&lt;strong&gt;实付&lt;/strong&gt;&lt;strong class=&quot;amount&quot;&gt;¥0.00&lt;/strong&gt;&lt;/div&gt;&lt;/section&gt;&#x27;+
     &#x27;&lt;section&gt;&lt;h3&gt;领取后怎么体验？&lt;/h3&gt;&lt;p class=&quot;subText&quot;&gt;先领取资格并试写，再发布至少 2 张实拍、100 字体验感受的关联笔记。发布后即可免费留用手账本。&lt;/p&gt;&#x27;+
     &#x27;&lt;p id=&quot;trialMessage&quot; role=&quot;status&quot;&gt;&lt;/p&gt;&lt;/section&gt;&#x27;,
-    &#x27;&lt;button id=&quot;confirmTrial&quot;&gt;确认领取试用资格&lt;/button&gt;&#x27;, recruit, &#x27;返回商品详情&#x27;);
+    &#x27;&lt;button id=&quot;confirmTrial&quot;&gt;确认领取试用资格&lt;/button&gt;&#x27;, trialDetail, &#x27;返回商品详情&#x27;);
   $(&#x27;confirmTrial&#x27;).onclick=()=&gt;{
-    if (state.task) { recruit(); return; }
+    if (state.task) { trialDetail(); return; }
     const order={shopId:&#x27;paper&#x27;,item:trialItem,date:new Date().toLocaleDateString(&#x27;sv-SE&#x27;),number:&#x27;T&#x27;+Date.now(),name:trialItem.name,total:0,status:&#x27;待评价&#x27;,trial:true};
     const next={...state,task:&#x27;pending&#x27;,orders:[...state.orders,order]};
-    try { localStorage.lifeMallDemo=JSON.stringify(next); }
-    catch { $(&#x27;trialMessage&#x27;).textContent=&#x27;订单暂未保存，请释放浏览器存储空间后再次领取。&#x27;; return; }
     state=next;
     trialOrder();
   };
@@ -2433,8 +2458,8 @@ function trialOrder() {
     &#x27;&lt;section class=&quot;receiptLead&quot;&gt;&lt;span class=&quot;receiptMark&quot; aria-hidden=&quot;true&quot;&gt;✓&lt;/span&gt;&lt;strong&gt;试用资格领取成功&lt;/strong&gt;&lt;p class=&quot;subText&quot;&gt;实付 ¥0 · 待试写并发布笔记&lt;/p&gt;&lt;/section&gt;&#x27;+
     &#x27;&lt;section&gt;&lt;h3&gt;体验商品&lt;/h3&gt;&#x27;+trialProduct(&#x27;街角文具店 · 数量 1&#x27;)+
     &#x27;&lt;div class=&quot;moneyRow trialPaid&quot;&gt;&lt;span&gt;订单编号&lt;/span&gt;&lt;span id=&quot;trialOrderNo&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;/section&gt;&#x27;+
-    &#x27;&lt;section&gt;&lt;h3&gt;试过以后，留一篇笔记&lt;/h3&gt;&lt;p class=&quot;subText&quot;&gt;拍下封面和一页试写，聊聊纸张、装订，或用起来不顺手的地方。发布笔记后即可免费留用。现在也可以先回街区，试过再来找店主。&lt;/p&gt;&lt;/section&gt;&#x27;,
-    &#x27;&lt;button class=&quot;secondary&quot; id=&quot;later&quot;&gt;稍后再写&lt;/button&gt;&lt;button id=&quot;writeNote&quot;&gt;去写种草笔记&lt;/button&gt;&#x27;, close, &#x27;返回街区&#x27;);
+    &#x27;&lt;section&gt;&lt;h3&gt;试过以后，留一篇笔记&lt;/h3&gt;&lt;p class=&quot;subText&quot;&gt;拍下封面和一页试写，聊聊纸张、装订，或用起来不顺手的地方。发布笔记后即可免费留用。&lt;/p&gt;&lt;/section&gt;&#x27;,
+    &#x27;&lt;button class=&quot;secondary&quot; id=&quot;later&quot;&gt;返回街区&lt;/button&gt;&lt;button id=&quot;writeNote&quot;&gt;去写种草笔记&lt;/button&gt;&#x27;, close, &#x27;返回街区&#x27;);
   $(&#x27;trialOrderNo&#x27;).textContent=order?.number || &#x27;已记录&#x27;;
   $(&#x27;writeNote&#x27;).onclick=writeNote;
   $(&#x27;later&#x27;).onclick=close;
@@ -2452,7 +2477,7 @@ async function photoPreview(file) {
 }
 
 function writeNote() {
-  if (state.task!==&#x27;pending&#x27;) { recruit(); return; }
+  if (state.task!==&#x27;pending&#x27;) { trialDetail(); return; }
   trialPage(&#x27;写种草笔记&#x27;,
     &#x27;&lt;section&gt;&#x27;+trialProduct(&#x27;关联商品 · 新品体验官&#x27;)+&#x27;&lt;/section&gt;&#x27;+
     &#x27;&lt;section&gt;&lt;h3&gt;实拍照片&lt;/h3&gt;&lt;p class=&quot;subText&quot;&gt;添加 2–6 张不同的实拍图。&lt;/p&gt;&lt;div id=&quot;shots&quot;&gt;&lt;/div&gt;&#x27;+
@@ -2511,8 +2536,6 @@ function writeNote() {
     if (submit.disabled || state.task!==&#x27;pending&#x27;) return;
     const next={...state,task:&#x27;submitted&#x27;,orders:state.orders.map(o=&gt;o.trial?{...o,status:&#x27;已发布笔记&#x27;}:o),note:{text:body.value.trim(),photos:pics}};
     delete next.trialDraft;
-    try { localStorage.lifeMallDemo=JSON.stringify(next); }
-    catch { message.textContent=&#x27;存储空间不足。可减少照片数量后再次发布。&#x27;;return; }
     state=next; readNote();
   };
 }
@@ -2538,7 +2561,7 @@ const home=document.getElementById('home'), map=document.getElementById('map'), 
 
 function enterMall(){home.classList.add('shift');home.inert=true;map.inert=false;map.classList.add('active');if(map.contentWindow.enter)map.contentWindow.enter()}
 
-function leaveMall(){map.contentWindow.endGuidance?.();setTourStep(null);map.classList.remove('active');map.inert=true;home.inert=false;home.classList.remove('shift');entry.focus()}
+function leaveMall(keepVisit=false){if(!keepVisit)finishDemoProducts();map.contentWindow.endGuidance?.();setTourStep(null);map.classList.remove('active');map.inert=true;home.inert=false;home.classList.remove('shift');entry.focus()}
 
 map.addEventListener('load',()=>{if(map.classList.contains('active'))map.contentWindow.enter()});
 
@@ -2548,7 +2571,12 @@ const cartKey='lifeMall.market.cart.v1';
 
 const itemCards=[...document.querySelectorAll('.pCard')],dialog=document.getElementById('goodsDialog'),goodsBody=document.getElementById('goodsBody');
 
-let basket={};try{basket=JSON.parse(localStorage.getItem(cartKey))||{}}catch{}
+let basket={},demoProducts=false;
+try{basket=JSON.parse(localStorage.getItem(cartKey))||{}}catch{}
+const marketBasket=basket;
+function saveCart(){if(!demoProducts)try{localStorage.setItem(cartKey,JSON.stringify(basket))}catch{}}
+function resetDemoProducts(){demoProducts=true;basket={};productUI.resetVisit()}
+function finishDemoProducts(){if(demoProducts){demoProducts=false;basket=marketBasket;productUI.resetVisit()}}
 
 function displayGoods(content){goodsBody.replaceChildren(...content);if(!dialog.open)dialog.showModal()}
 
@@ -2700,7 +2728,7 @@ productDialog.addEventListener('click',e=>{
 
  if(act==='coupon'){selectionFor().claimed=true;renderProduct();productMessage('店铺优惠已领取')}
 
- if(act==='add'){basket[productId]=(basket[productId]||0)+1;try{localStorage.setItem(cartKey,JSON.stringify(basket))}catch{}renderProduct();if(dialog.open)cartView();productMessage('已加入购物车')}
+ if(act==='add'){basket[productId]=(basket[productId]||0)+1;saveCart();renderProduct();if(dialog.open)cartView();productMessage('已加入购物车')}
 
  if(act==='cart'){if(dialog.open)productDialog.close();cartView()}
 
@@ -2714,13 +2742,19 @@ productDialog.addEventListener('cancel',e=>{if(!$('.product-mask').hidden){e.pre
 
 
 
+function resetVisit(){
+ selection={};historyList.length=0;
+ for(const id of Object.keys(productMeta)){
+   if(productMeta[id].shelf){delete productMeta[id];delete covers[id];delete onPurchase[id]}
+ }
+}
 function registerShelf(a,url,off){
 
  const id=(a.trial?'trial:':'shelf:')+a.p;covers[id]=url;
 
  productMeta[id]={shelf:true,trial:!!a.trial,group:a.id,name:a.name,price:a.price,deal:a.price-off,off,defaultSize:a.defaultSize,styles:[a.styleName||'图示款'],sizes:a.id==='fashion'?['S','M','L']:['标准装'],effects:['','','']};
 
- try{localStorage.setItem('lifeMall.product.'+id,JSON.stringify({meta:productMeta[id],path:a.p}))}catch{}
+ if(!demoProducts)try{localStorage.setItem('lifeMall.product.'+id,JSON.stringify({meta:productMeta[id],path:a.p}))}catch{}
 
  return id
 }
@@ -2728,11 +2762,11 @@ function openShelf(a,url,off,done){const id=registerShelf(a,url,off);onPurchase[
 
 }
 
-function restore(id){if(productMeta[id])return true;
+function restore(id){if(productMeta[id])return true;if(demoProducts)return false;
 
  try{const saved=JSON.parse(localStorage.getItem('lifeMall.product.'+id));const src=document.getElementById('map').contentWindow.shelfPhoto(saved.path);if(!src)return false;productMeta[id]=Object.assign({},saved.meta,{deal:saved.meta.price,off:0});covers[id]=src;return true}catch{return false}}
 
-return {detail,openShelf,restore,registerShelf,name:id=>productMeta[id]?.name}
+return {detail,openShelf,restore,registerShelf,resetVisit,name:id=>productMeta[id]?.name}
 
 })();
 
@@ -2804,7 +2838,7 @@ orders.onclick=async e=>{
 
  if(cmd==='copy'){try{await navigator.clipboard.writeText(activeOrder.number);ordToast('已复制订单编号')}catch{ordPopup('订单编号',activeOrder.number)}return}
 
- if(cmd==='add'){const k='shelf:'+activeOrder.item.p;basket[k]=(basket[k]||0)+1;try{localStorage.setItem(cartKey,JSON.stringify(basket));localStorage.setItem('lifeMall.product.'+k,JSON.stringify({meta:{shelf:true,group:activeOrder.item.id,name:activeOrder.title,price:activeOrder.price,deal:activeOrder.price,styles:['图示款'],sizes:['标准装'],effects:['','','']},path:activeOrder.item.p}))}catch{}ordToast('已加入购物车');return}
+ if(cmd==='add'){const k='shelf:'+activeOrder.item.p;basket[k]=(basket[k]||0)+1;if(!demoProducts)try{localStorage.setItem(cartKey,JSON.stringify(basket));localStorage.setItem('lifeMall.product.'+k,JSON.stringify({meta:{shelf:true,group:activeOrder.item.id,name:activeOrder.title,price:activeOrder.price,deal:activeOrder.price,styles:['图示款'],sizes:['标准装'],effects:['','','']},path:activeOrder.item.p}))}catch{}ordToast('已加入购物车');return}
 
  if(cmd==='cost'){$('#costBreak').hidden=!$('#costBreak').hidden;return}
 
@@ -2977,7 +3011,7 @@ function display(restore){
  const g=mapFrame.contentWindow;if(!g.memoryReceipt||!pane.contentWindow.renderReceipt)return;
  if(!mapFrame.classList.contains('active')){enterMall();restore=true}
  receipt=g.memoryReceipt(match[1],Number(match[2])-1,restore);
- if(!receipt)return;
+ if(!receipt){if(layer.open)layer.close();return}
  trigger=mapFrame.contentDocument.querySelector('[data-history="'+(Number(match[2])-1)+'"]');
  fit();if(!layer.open)layer.showModal();pane.contentWindow.renderReceipt(receipt);
  pane.contentDocument.querySelector('[data-o="back"]')?.focus({preventScroll:true});
@@ -2985,7 +3019,7 @@ function display(restore){
 window.openMemoryOrder=(id,i)=>{history.pushState({memoryOrder:true},'', '#order/'+id+'/'+(i+1));display(false)};
 window.closeMemoryOrder=()=>{if(history.state?.memoryOrder)history.back();else{history.replaceState(null,'',location.href.split('#')[0]);display(false)}};
 window.openMemoryProduct=()=>mapFrame.contentWindow.buy(receipt.a);
-window.addMemoryProduct=()=>{const id=productUI.registerShelf(receipt.a,receipt.photo,0);basket[id]=(basket[id]||0)+1;try{localStorage.setItem(cartKey,JSON.stringify(basket))}catch{}};
+window.addMemoryProduct=()=>{const id=productUI.registerShelf(receipt.a,receipt.photo,0);basket[id]=(basket[id]||0)+1;saveCart()};
 layer.addEventListener('cancel',e=>{e.preventDefault();closeMemoryOrder()});
 layer.addEventListener('close',()=>requestAnimationFrame(()=>{
  if(layer.open||mapFrame.inert||!trigger)return;
@@ -3023,7 +3057,7 @@ function resetMarketHeader(){searchField.value='';marketCategory='推荐';filter
 searchField.addEventListener('input',filterMarket);
 home.querySelector('.marketSearch').onsubmit=e=>{e.preventDefault();filterMarket();searchField.blur()};
 for(const tab of categoryTabs)tab.onclick=()=>{marketCategory=tab.dataset.category;filterMarket()};
-function endMarketBrowse(){setTourStep(null);home.classList.remove('marketBrowse');resetMarketHeader()}
+function endMarketBrowse(){if(home.classList.contains('marketBrowse'))finishDemoProducts();setTourStep(null);home.classList.remove('marketBrowse');resetMarketHeader()}
 browseBack.onclick=()=>{endMarketBrowse();enterMall()};
 function refreshMarketOffer(){
  const card=home.querySelector('[data-snack]');
@@ -3031,7 +3065,7 @@ function refreshMarketOffer(){
 }
 function showMarketFeed(){
  const game=map.contentWindow;
- leaveMall();home.classList.add('marketBrowse');setTourStep('gift');
+ leaveMall(true);home.classList.add('marketBrowse');setTourStep('gift');
  if(!home.querySelector('.feedExtra')){
   const cols=home.querySelectorAll('.feedCol');
   game.marketSelection().forEach((a,i)=>{
